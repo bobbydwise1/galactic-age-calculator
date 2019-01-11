@@ -6,8 +6,6 @@ export class Calculator {
     const deathDate = new Date(parseInt(params.year + params.lifeExpectency), params.month, params.day);
     this.yearsAlive = parseFloat(((Date.now()-birthDate.getTime())/31556926080).toFixed(2));
     this.expectedLife = parseFloat(((deathDate.getTime()-Date.now())/31556926080).toFixed(2));
-    // this.age = params.age;
-    // this.lifeExpectency = params.lifeExpectency;
   }
 
   planetaryYears(planet) {
@@ -18,5 +16,3 @@ export class Calculator {
     return parseFloat((this.expectedLife/planetValues[planet]).toFixed(2));
   }
 }
-
-//86400000*365.2422
