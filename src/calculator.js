@@ -10,4 +10,8 @@ export class Calculator {
   venusYears() {
     return parseInt(this.age/.62);
   }
+
+  marsYears() {
+    return parseInt(this.age/1.88);
+  }
 }
