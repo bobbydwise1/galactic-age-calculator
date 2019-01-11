@@ -21,4 +21,10 @@ describe('Calculator', function() {
   it("should calculate the number of years a person has lived in Jupiter years.", function() {
     expect(calculator.planetaryYears(3)).toEqual(1.77);
   });
+  it("should use the person's life expectency to calculate how many years more years they are likely to live", function() {
+    expect(calculator.planetaryLifeExpectency(0)).toEqual(241.67);
+    expect(calculator.planetaryLifeExpectency(0)).toEqual(93.55);
+    expect(calculator.planetaryLifeExpectency(0)).toEqual(30.85);
+    expect(calculator.planetaryLifeExpectency(0)).toEqual(4.89);
+  });
 });
