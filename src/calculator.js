@@ -6,7 +6,7 @@ export class Calculator {
   }
 
   planetaryYears(planet) {
-    return (this.age/planetValues[planet]).toFixed(2);
+    return parseFloat((this.age/planetValues[planet]).toFixed(2));
   }
 }
 

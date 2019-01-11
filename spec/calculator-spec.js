@@ -1,8 +1,9 @@
 import { Calculator } from "./../src/calculator.js"
 
 describe('Calculator', function() {
+  let calculator = null;
   beforeEach(function() {
-    const calculator = new Calculator({age: 21});
+    calculator = new Calculator({age: 21});
   });
   it("should take the user's age and store the information.", function() {
     expect(calculator.age).toEqual(21);
