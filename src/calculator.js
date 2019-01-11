@@ -6,4 +6,8 @@ export class Calculator {
   mercuryYears() {
     return parseInt(this.age/.24);
   }
+
+  venusYears() {
+    return parseInt(this.age/.62);
+  }
 }
