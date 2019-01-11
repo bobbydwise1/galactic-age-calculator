@@ -3,10 +3,11 @@ import { Calculator } from "./../src/calculator.js"
 describe('Calculator', function() {
   let calculator = null;
   beforeEach(function() {
-    calculator = new Calculator({age: 21});
+    calculator = new Calculator({age: 21, lifeExpectency: 79});
   });
-  it("should take the user's age and store the information.", function() {
+  it("should take the user's age and life expectency and store the information.", function() {
     expect(calculator.age).toEqual(21);
+    expect(calculator.lifeExpectency).toEqual(79);
   });
   it("should calculate the number of years a person has lived in Mecury years.", function() {
     expect(calculator.planetaryYears(0)).toEqual(87.5);
