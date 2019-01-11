@@ -13,4 +13,8 @@ describe('Calculator', function() {
     const calculator = new Calculator({age: 21});
     expect(calculator.venusYears()).toEqual(33);
   });
+  it("should calculate the number of years a person has lived in Mars years.", function() {
+    const calculator = new Calculator({age: 21});
+    expect(calculator.marsYears()).toEqual(11);
+  });
 });
