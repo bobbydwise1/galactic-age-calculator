@@ -4,18 +4,20 @@ export class Calculator {
   }
 
   mercuryYears() {
-    return parseInt(this.age/.24);
+    return (this.age/.24).toFixed(2);
   }
 
   venusYears() {
-    return parseInt(this.age/.62);
+    return (this.age/.62).toFixed(2);
   }
 
   marsYears() {
-    return parseInt(this.age/1.88);
+    return (this.age/1.88).toFixed(2);
   }
 
   jupiterYears() {
-    return parseInt(this.age/11.86);
+    return (this.age/11.86).toFixed(2);
   }
 }
+
+//86400000*365.2422
