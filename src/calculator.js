@@ -14,4 +14,8 @@ export class Calculator {
   marsYears() {
     return parseInt(this.age/1.88);
   }
+
+  jupiterYears() {
+    return parseInt(this.age/11.86);
+  }
 }
