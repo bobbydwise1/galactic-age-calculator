@@ -5,6 +5,22 @@
     <title>Galactic Calculator</title>
   </head>
   <body>
-
+    <div class="container">
+      <form id="calculator">
+        <label for="birthday">Input your birthday:</label>
+        <input type="date" id="birthday"><br>
+        <label for="expectancy">Input the average life expectancy for your demographic:</label>
+        <input type="number" id="expectancy"><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </form>
+      <div id="output">
+        <p id="mercury"></p>
+        <p id="venus"></p>
+        <p id="mars"></p>
+        <p id="jupiter"></p>
+      </div>
+      <button type="button" id="back">Go back</button>
+    </div>
   </body>
 </html>

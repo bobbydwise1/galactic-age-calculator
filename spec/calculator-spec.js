@@ -4,7 +4,7 @@ describe('Calculator', function() {
   let calculator = null;
 
   beforeEach(function() {
-    calculator = new Calculator({year: 1997, month: 2, day: 31, lifeExpectency: 79});
+    calculator = new Calculator({year: 1997, month: 2, day: 31, lifeExpectancy: 79});
   });
 
   it("should take the user's age and life expectency and store the information.", function() {
@@ -27,11 +27,11 @@ describe('Calculator', function() {
   it("should calculate the number of years a person has lived in Jupiter years.", function() {
     expect(calculator.planetaryYears(3)).toEqual(1.84);
   });
-  
-  it("should use the person's life expectency to calculate how many years more years they are likely to live", function() {
-    expect(calculator.planetaryLifeExpectency(0)).toEqual(238.42);
-    expect(calculator.planetaryLifeExpectency(1)).toEqual(92.29);
-    expect(calculator.planetaryLifeExpectency(2)).toEqual(30.44);
-    expect(calculator.planetaryLifeExpectency(3)).toEqual(4.82);
+
+  it("should use the person's life expectancy to calculate how many years more years they are likely to live", function() {
+    expect(calculator.planetaryLifeExpectancy(0)).toEqual(238.42);
+    expect(calculator.planetaryLifeExpectancy(1)).toEqual(92.29);
+    expect(calculator.planetaryLifeExpectancy(2)).toEqual(30.44);
+    expect(calculator.planetaryLifeExpectancy(3)).toEqual(4.82);
   });
 });

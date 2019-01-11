@@ -1,0 +1,11 @@
+body {
+  background: linear-gradient(lightyellow, yellow, orange) fixed;
+}
+
+#output {
+  display: none;
+}
+
+#back {
+  display: none;
+}
