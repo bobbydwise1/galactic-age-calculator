@@ -1,4 +1,4 @@
-const planetValues = [.24, .62, 1.88, 11.86}];
+const planetValues = [.24, .62, 1.88, 11.86];
 
 export class Calculator {
   constructor(params) {
