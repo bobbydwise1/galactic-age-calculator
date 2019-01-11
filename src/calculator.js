@@ -9,6 +9,10 @@ export class Calculator {
   planetaryYears(planet) {
     return parseFloat((this.age/planetValues[planet]).toFixed(2));
   }
+
+  planetaryLifeExpectency(planet) {
+    return parseFloat(((this.lifeExpectency-this.age)/planetValues[planet]).toFixed(2));
+  }
 }
 
 //86400000*365.2422

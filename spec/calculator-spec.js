@@ -23,8 +23,8 @@ describe('Calculator', function() {
   });
   it("should use the person's life expectency to calculate how many years more years they are likely to live", function() {
     expect(calculator.planetaryLifeExpectency(0)).toEqual(241.67);
-    expect(calculator.planetaryLifeExpectency(0)).toEqual(93.55);
-    expect(calculator.planetaryLifeExpectency(0)).toEqual(30.85);
-    expect(calculator.planetaryLifeExpectency(0)).toEqual(4.89);
+    expect(calculator.planetaryLifeExpectency(1)).toEqual(93.55);
+    expect(calculator.planetaryLifeExpectency(2)).toEqual(30.85);
+    expect(calculator.planetaryLifeExpectency(3)).toEqual(4.89);
   });
 });
