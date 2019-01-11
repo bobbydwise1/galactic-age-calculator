@@ -9,4 +9,8 @@ describe('Calculator', function() {
     const calculator = new Calculator({age: 21});
     expect(calculator.mercuryYears()).toEqual(87);
   });
+  it("should calculate the number of years a person has lived in Venus years.", function() {
+    const calculator = new Calculator({age: 21});
+    expect(calculator.venusYears()).toEqual(33);
+  });
 });
