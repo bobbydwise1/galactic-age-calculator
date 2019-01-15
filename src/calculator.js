@@ -4,7 +4,7 @@ export class Calculator {
   constructor(params) {
     let currentDate = Date.now();
     if(params.currentDate) {
-      currentDate = params.currentDate
+      currentDate = params.currentDate;
     }
     const birthDate = new Date(params.year, params.month, params.day);
     const deathDate = new Date(parseInt(params.year + params.lifeExpectancy), params.month, params.day);
