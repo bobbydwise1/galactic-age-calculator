@@ -4,7 +4,8 @@ describe('Calculator', function() {
   let calculator = null;
 
   beforeEach(function() {
-    calculator = new Calculator({year: 1997, month: 2, day: 31, lifeExpectancy: 79});
+    const tempDate = new Date(2019, 0, 11);
+    calculator = new Calculator({year: 1997, month: 2, day: 31, lifeExpectancy: 79, currentDate: tempDate.getTime()});
   });
 
   it("should take the user's age and life expectency and store the information.", function() {
